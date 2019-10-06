@@ -14,7 +14,7 @@
 		"host" : "127.0.0.1",
 		"database" : "itcast",
 		"user" : "root",
-		"password" : "root",
+		"password" : "replaceroot.1234",
 		"port" : 3306	
 	}
 }

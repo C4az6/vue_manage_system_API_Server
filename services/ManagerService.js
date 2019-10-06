@@ -46,6 +46,7 @@ module.exports.getAllManagers = function(conditions,cb) {
 				}
 				retManagers.push({
 					"id": manager.mg_id,
+					"rid": manager.role_id,
 					"role_name":role_name,
 					"username":manager.mg_name,
 					"create_time":manager.mg_time,

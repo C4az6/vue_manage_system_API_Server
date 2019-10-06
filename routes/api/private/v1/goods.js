@@ -60,7 +60,10 @@ router.put("/:id",
 		if(!req.params.id) {
 			return res.sendResult(null,400,"商品ID不能为空");
 		}
-		if(isNaN(parseInt(req.params.id))) return res.sendResult(null,400,"商品ID必须是数字");
+		if(isNaN(parseInt(req.params.id))){
+			console.log("********************Client send goods_id is: " + req.params.id);
+			return res.sendResult(null,400,"商品ID必须是数字");
+		}
 		next();
 	},
 	// 业务逻辑
